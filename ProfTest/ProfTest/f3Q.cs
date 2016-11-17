@@ -10,17 +10,21 @@ using System.Windows.Forms;
 
 namespace ProfTest
 {
-    public partial class Main : Form
+    public partial class f3Q : Form
     {
-        f1Q f1q = new f1Q();
-        public Main()
+        f4Q f4q = new f4Q();
+        public f3Q()
         {
             InitializeComponent();
         }
 
-        private void btnStart_Click(object sender, EventArgs e)
+        private void button1_Click(object sender, EventArgs e)
         {
-            f1q.ShowDialog();
+            if(tb3QAnswer.Text == "10")
+            {
+                Test.score++;
+            }
+            f4q.ShowDialog();
         }
     }
 }

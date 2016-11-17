@@ -10,17 +10,11 @@ using System.Windows.Forms;
 
 namespace ProfTest
 {
-    public partial class Main : Form
+    public partial class f5Q : Form
     {
-        f1Q f1q = new f1Q();
-        public Main()
+        public f5Q()
         {
             InitializeComponent();
-        }
-
-        private void btnStart_Click(object sender, EventArgs e)
-        {
-            f1q.ShowDialog();
         }
     }
 }
