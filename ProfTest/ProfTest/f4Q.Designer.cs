@@ -137,6 +137,7 @@
             this.Controls.Add(this.label1);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "f4Q";
+            this.Activated += new System.EventHandler(this.f4Q_Activated);
             ((System.ComponentModel.ISupportInitialize)(this.nud4QAnswer)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();

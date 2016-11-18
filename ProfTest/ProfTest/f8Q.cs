@@ -23,5 +23,10 @@ namespace ProfTest
             if (tb8QAnswer.Text == "16") Test.score++;
             f9q.ShowDialog();
         }
+
+        private void f8Q_Activated(object sender, EventArgs e)
+        {
+            if (Test.toStart || Test.Exit) Close();
+        }
     }
 }

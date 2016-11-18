@@ -229,6 +229,7 @@
             this.Controls.Add(this.label1);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "f9Q";
+            this.Activated += new System.EventHandler(this.f9Q_Activated);
             this.ResumeLayout(false);
             this.PerformLayout();
 

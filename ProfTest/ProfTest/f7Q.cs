@@ -23,5 +23,10 @@ namespace ProfTest
             if (tb7QPublic.Text == "public" && tb7QInt.Text == "int" && tb7QVal.Text == "val") Test.score++;
             f8q.ShowDialog();
         }
+
+        private void f7Q_Activated(object sender, EventArgs e)
+        {
+            if (Test.toStart || Test.Exit) Close();
+        }
     }
 }

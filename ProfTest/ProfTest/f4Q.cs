@@ -23,5 +23,10 @@ namespace ProfTest
             if(nud4QAnswer.Value == 4) Test.score++;
             f5q.ShowDialog();
         }
+
+        private void f4Q_Activated(object sender, EventArgs e)
+        {
+            if (Test.toStart || Test.Exit) Close();
+        }
     }
 }

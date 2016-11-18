@@ -10,23 +10,28 @@ using System.Windows.Forms;
 
 namespace ProfTest
 {
-    public partial class f6Q : Form
+    public partial class Result : Form
     {
-        f7Q f7q = new f7Q();
-        public f6Q()
+        public Result()
         {
             InitializeComponent();
         }
 
-        private void button1_Click(object sender, EventArgs e)
+        private void Result_Load(object sender, EventArgs e)
         {
-            if (rbTrue.Checked) Test.score++;
-            f7q.ShowDialog();
+            lblResult.Text = Test.GetResult();
         }
 
-        private void f6Q_Activated(object sender, EventArgs e)
+        private void button1_Click(object sender, EventArgs e)
         {
-            if (Test.toStart || Test.Exit) Close();
+            Test.toStart = true;
+            Close();
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            Test.Exit = true;
+            Close();
         }
     }
 }

@@ -23,5 +23,10 @@ namespace ProfTest
             if (tb5QPublic.Text == "public" && tb5QA.Text == "a") Test.score++;
             f6q.ShowDialog();
         }
+
+        private void f5Q_Activated(object sender, EventArgs e)
+        {
+            if (Test.toStart || Test.Exit) Close();
+        }
     }
 }

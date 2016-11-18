@@ -22,5 +22,15 @@ namespace ProfTest
         {
             f1q.ShowDialog();
         }
+
+        private void Main_Activated(object sender, EventArgs e)
+        {
+            Test.toStart = false;
+            if (Test.Exit)
+            {
+                Test.Exit = false;
+                Close();
+            }
+        }
     }
 }

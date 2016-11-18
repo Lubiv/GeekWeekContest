@@ -12,6 +12,7 @@ namespace ProfTest
 {
     public partial class f10Q : Form
     {
+        Result result = new Result();
         public f10Q()
         {
             InitializeComponent();
@@ -20,7 +21,12 @@ namespace ProfTest
         private void btnToResult_Click(object sender, EventArgs e)
         {
             if (rb10QTrue.Checked) Test.score++;
+            result.ShowDialog();
+        }
 
+        private void f10Q_Activated(object sender, EventArgs e)
+        {
+            if (Test.toStart || Test.Exit) Close();
         }
     }
 }

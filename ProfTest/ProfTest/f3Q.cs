@@ -26,5 +26,10 @@ namespace ProfTest
             }
             f4q.ShowDialog();
         }
+
+        private void f3Q_Activated(object sender, EventArgs e)
+        {
+            if (Test.toStart || Test.Exit) Close();
+        }
     }
 }

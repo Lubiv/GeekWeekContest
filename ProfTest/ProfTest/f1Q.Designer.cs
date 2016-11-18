@@ -115,6 +115,7 @@
             this.Controls.Add(this.label1);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "f1Q";
+            this.Activated += new System.EventHandler(this.f1Q_Activated);
             this.ResumeLayout(false);
             this.PerformLayout();
 

@@ -16,12 +16,18 @@ namespace ProfTest
         public f9Q()
         {
             InitializeComponent();
+            if (Test.toStart || Test.Exit) Close();
         }
 
         private void btnTo10Q_Click(object sender, EventArgs e)
         {
             if (tb9QInterface.Text == "interface" && tb9QTwoDots.Text == ":" && tb9QComma.Text == ",") Test.score++;
             f10q.ShowDialog();
+        }
+
+        private void f9Q_Activated(object sender, EventArgs e)
+        {
+            if (Test.toStart || Test.Exit) Close();
         }
     }
 }
