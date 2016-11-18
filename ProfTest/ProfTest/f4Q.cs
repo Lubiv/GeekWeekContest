@@ -20,10 +20,7 @@ namespace ProfTest
 
         private void btnTo5Q_Click(object sender, EventArgs e)
         {
-            if(nud4QAnswer.Value == 4)
-            {
-                Test.score++;
-            }
+            if(nud4QAnswer.Value == 4) Test.score++;
             f5q.ShowDialog();
         }
     }

@@ -102,6 +102,7 @@
             // 
             this.tb3QAnswer.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.tb3QAnswer.Location = new System.Drawing.Point(208, 179);
+            this.tb3QAnswer.MaxLength = 2;
             this.tb3QAnswer.Name = "tb3QAnswer";
             this.tb3QAnswer.Size = new System.Drawing.Size(34, 20);
             this.tb3QAnswer.TabIndex = 2;

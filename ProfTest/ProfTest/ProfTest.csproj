@@ -46,6 +46,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="f10Q.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="f10Q.Designer.cs">
+      <DependentUpon>f10Q.cs</DependentUpon>
+    </Compile>
     <Compile Include="f1Q.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -70,6 +76,24 @@
     <Compile Include="f4Q.Designer.cs">
       <DependentUpon>f4Q.cs</DependentUpon>
     </Compile>
+    <Compile Include="f6Q.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="f6Q.Designer.cs">
+      <DependentUpon>f6Q.cs</DependentUpon>
+    </Compile>
+    <Compile Include="f7Q.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="f7Q.Designer.cs">
+      <DependentUpon>f7Q.cs</DependentUpon>
+    </Compile>
+    <Compile Include="f8Q.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="f8Q.Designer.cs">
+      <DependentUpon>f8Q.cs</DependentUpon>
+    </Compile>
     <Compile Include="Form1.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -82,9 +106,18 @@
     <Compile Include="f5Q.Designer.cs">
       <DependentUpon>f5Q.cs</DependentUpon>
     </Compile>
+    <Compile Include="f9Q.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="f9Q.Designer.cs">
+      <DependentUpon>f9Q.cs</DependentUpon>
+    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Test.cs" />
+    <EmbeddedResource Include="f10Q.resx">
+      <DependentUpon>f10Q.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="f1Q.resx">
       <DependentUpon>f1Q.cs</DependentUpon>
     </EmbeddedResource>
@@ -99,6 +132,18 @@
     </EmbeddedResource>
     <EmbeddedResource Include="f5Q.resx">
       <DependentUpon>f5Q.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="f6Q.resx">
+      <DependentUpon>f6Q.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="f7Q.resx">
+      <DependentUpon>f7Q.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="f8Q.resx">
+      <DependentUpon>f8Q.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="f9Q.resx">
+      <DependentUpon>f9Q.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>

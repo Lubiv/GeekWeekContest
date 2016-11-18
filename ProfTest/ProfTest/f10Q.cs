@@ -10,18 +10,17 @@ using System.Windows.Forms;
 
 namespace ProfTest
 {
-    public partial class f5Q : Form
+    public partial class f10Q : Form
     {
-        f6Q f6q = new f6Q();
-        public f5Q()
+        public f10Q()
         {
             InitializeComponent();
         }
 
-        private void button1_Click(object sender, EventArgs e)
+        private void btnToResult_Click(object sender, EventArgs e)
         {
-            if (tb5QPublic.Text == "public" && tb5QA.Text == "a") Test.score++;
-            f6q.ShowDialog();
+            if (rb10QTrue.Checked) Test.score++;
+
         }
     }
 }
