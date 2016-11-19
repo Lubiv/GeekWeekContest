@@ -1,0 +1,39 @@
+﻿using UnityEngine;
+using System.Collections;
+
+public class ShellAttackScript : MonoBehaviour
+{
+
+    public GameObject shell;
+
+    // Use this for initialization
+    void Start()
+    {
+        InvokeRepeating("AddShell", 1f, 1f);
+    }
+
+    static public float posY = 0;
+
+    void Update()
+    {
+        posY = gameObject.transform.position.y + 0.24f;
+        if (Input.GetKeyDown(KeyCode.W))
+        {
+            var pos = gameObject.transform.position;
+            pos.y += 1.75f;
+            gameObject.transform.position = pos;
+        }
+        if (Input.GetKeyDown(KeyCode.S))
+        {
+            var pos = gameObject.transform.position;
+            pos.y -= 1.75f;
+            gameObject.transform.position = pos;
+        }
+    }
+
+    // Update is called once per frame
+    void AddShell()
+    {
+        Instantiate(shell);
+    }
+}
