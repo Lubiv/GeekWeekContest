@@ -17,13 +17,13 @@ public class ShellAttackScript : MonoBehaviour
     void Update()
     {
         posY = gameObject.transform.position.y + 0.24f;
-        if (Input.GetKeyDown(KeyCode.W))
+        if (Input.GetKeyDown(KeyCode.W) && gameObject.transform.position.y < 3.5f)
         {
             var pos = gameObject.transform.position;
             pos.y += 1.75f;
             gameObject.transform.position = pos;
         }
-        if (Input.GetKeyDown(KeyCode.S))
+        if (Input.GetKeyDown(KeyCode.S) && gameObject.transform.position.y > -3.5f)
         {
             var pos = gameObject.transform.position;
             pos.y -= 1.75f;
