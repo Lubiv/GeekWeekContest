@@ -15,6 +15,10 @@ public class ZombieScript : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
+        if(gameObject.transform.position.y > 12f)
+        {
+            Destroy(gameObject);
+        }
 	
 	}
 
@@ -26,6 +30,7 @@ public class ZombieScript : MonoBehaviour {
         if (hp <= 0)
         {
             Destroy(gameObject);
+            Zombie.zombieKilled++;
         }
     }
 }
