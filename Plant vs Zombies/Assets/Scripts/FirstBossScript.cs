@@ -19,6 +19,10 @@ public class FirstBossScript : MonoBehaviour {
             Zombie.zombieKilled++;
         }
 
+        if (gameObject.transform.position.x < -7f)
+        {
+            Zombie.gotYou = true;
+        }
     }
 
     int hp = 30;

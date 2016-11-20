@@ -15,9 +15,9 @@ public class ZombieScript : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
-        if(gameObject.transform.position.y > 12f)
+        if(gameObject.transform.position.x < -7f)
         {
-            Destroy(gameObject);
+            Zombie.gotYou = true;
         }
 	
 	}

@@ -48,6 +48,7 @@
      <Compile Include="Assets\Scripts\AttackScript.cs" />
      <Compile Include="Assets\Scripts\CreateZombieScript.cs" />
      <Compile Include="Assets\Scripts\FirstBossScript.cs" />
+     <Compile Include="Assets\Scripts\GameOverManager.cs" />
      <Compile Include="Assets\Scripts\ShellAttackScript.cs" />
      <Compile Include="Assets\Scripts\Zombie.cs" />
      <Compile Include="Assets\Scripts\ZombieScript.cs" />
