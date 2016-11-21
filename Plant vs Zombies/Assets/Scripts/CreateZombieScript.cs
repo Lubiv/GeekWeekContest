@@ -4,14 +4,27 @@ using System.Collections;
 public class CreateZombieScript : MonoBehaviour {
 
     public GameObject zombie;
+    public GameObject fourthBoss;
 
-	// Use this for initialization
-	void Start () {
+	void Start ()
+    {
         InvokeRepeating("AddZombie", 1f, 4f);
 	}
-	
-	// Update is called once per frame
-	void AddZombie () {
+
+    void Update()
+    {
+        if(Zombie.zombieKilled == 31)
+        {
+            Instantiate(fourthBoss);
+            var pos = fourthBoss.gameObject.transform.position;
+            pos = new Vector3(8, Random.Range(-2, 1) * 1.75f, pos.z);
+            fourthBoss.gameObject.transform.position = pos;
+            Zombie.zombieKilled ++;
+        }
+    }
+
+	void AddZombie ()
+    {
         Instantiate(zombie);
 	}
 }

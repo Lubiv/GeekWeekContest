@@ -48,8 +48,11 @@
      <Compile Include="Assets\Scripts\AttackScript.cs" />
      <Compile Include="Assets\Scripts\CreateZombieScript.cs" />
      <Compile Include="Assets\Scripts\FirstBossScript.cs" />
+     <Compile Include="Assets\Scripts\FourthBossScript.cs" />
      <Compile Include="Assets\Scripts\GameOverManager.cs" />
+     <Compile Include="Assets\Scripts\SecondBossScript.cs" />
      <Compile Include="Assets\Scripts\ShellAttackScript.cs" />
+     <Compile Include="Assets\Scripts\ThirdBossScript.cs" />
      <Compile Include="Assets\Scripts\Zombie.cs" />
      <Compile Include="Assets\Scripts\ZombieScript.cs" />
  <Reference Include="UnityEngine.UI">

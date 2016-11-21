@@ -6,7 +6,7 @@ public class GameOverManager : MonoBehaviour
     Animator anim;
     float restartTimer;
 
-    void Start()
+    void Awake()
     {
         anim = GetComponent<Animator>();
     }

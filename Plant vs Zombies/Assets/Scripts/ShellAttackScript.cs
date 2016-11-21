@@ -6,7 +6,6 @@ public class ShellAttackScript : MonoBehaviour
 
     public GameObject shell;
 
-    // Use this for initialization
     void Start()
     {
         InvokeRepeating("AddShell", 1f, 1f);
@@ -31,7 +30,6 @@ public class ShellAttackScript : MonoBehaviour
         }
     }
 
-    // Update is called once per frame
     void AddShell()
     {
         Instantiate(shell);

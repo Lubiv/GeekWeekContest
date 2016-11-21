@@ -3,15 +3,13 @@ using System.Collections;
 
 public class FirstBossScript : MonoBehaviour {
 
-	// Use this for initialization
 	void Start () {
         Vector2 vel = new Vector2(-0.8f, 0);
         gameObject.GetComponent<Rigidbody2D>().velocity = vel;
     }
 	
-	// Update is called once per frame
 	void Update () {
-        if (Zombie.zombieKilled == 2)
+        if (Zombie.zombieKilled == 5)
         {
             var pos = gameObject.transform.position;
             pos = new Vector3(8f, -1f, pos.z);
