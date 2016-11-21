@@ -1,7 +1,7 @@
 ﻿using UnityEngine;
 using System.Collections;
 
-public class GameOverManager : MonoBehaviour
+public class YouWonManager : MonoBehaviour
 {
     Animator anim;
     float restartTimer;
@@ -10,23 +10,23 @@ public class GameOverManager : MonoBehaviour
     {
         anim = GetComponent<Animator>();
     }
-
-    void Update()
+	
+	void Update()
     {
-        if (Zombie.gotYou)
+        if (Zombie.lastBossKilled == 2)
         {
             Zombie.zombieKilled = 0;
             Zombie.gotYou = false;
             Zombie.lastBossKilled = 0;
 
-            anim.SetTrigger("GameOver");
+            anim.SetTrigger("YouWon");
 
-            restartTimer += Time.deltaTime;
+            restartTimer = Time.deltaTime;
 
             if (restartTimer >= 5)
-            {             
+            {
                 Application.LoadLevel(Application.loadedLevel);
             }
         }
-    }
+	}
 }

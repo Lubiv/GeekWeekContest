@@ -53,6 +53,7 @@
      <Compile Include="Assets\Scripts\SecondBossScript.cs" />
      <Compile Include="Assets\Scripts\ShellAttackScript.cs" />
      <Compile Include="Assets\Scripts\ThirdBossScript.cs" />
+     <Compile Include="Assets\Scripts\YouWonManager.cs" />
      <Compile Include="Assets\Scripts\Zombie.cs" />
      <Compile Include="Assets\Scripts\ZombieScript.cs" />
  <Reference Include="UnityEngine.UI">

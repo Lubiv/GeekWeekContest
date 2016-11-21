@@ -33,6 +33,7 @@ public class FourthBossScript : MonoBehaviour {
         if (hp <= 0)
         {
             Destroy(gameObject);
+            Zombie.lastBossKilled++;
         }
     }
 }
