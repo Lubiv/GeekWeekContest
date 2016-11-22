@@ -4,7 +4,7 @@ using System.Collections;
 public class AttackScript : MonoBehaviour {
 
 	void Start () {
-        Vector2 vel = new Vector2(4f, 0);
+        Vector2 vel = new Vector2(Zombie.shellSpeed, 0);
         gameObject.GetComponent<Rigidbody2D>().velocity = vel;
 
         var pos = gameObject.transform.position;

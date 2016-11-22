@@ -3,7 +3,6 @@ using System.Collections;
 
 public class ShellAttackScript : MonoBehaviour
 {
-
     public GameObject shell;
 
     void Start()

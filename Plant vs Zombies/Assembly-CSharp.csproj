@@ -46,6 +46,7 @@
   </ItemGroup>
   <ItemGroup>
      <Compile Include="Assets\Scripts\AttackScript.cs" />
+     <Compile Include="Assets\Scripts\BoosterScript.cs" />
      <Compile Include="Assets\Scripts\CreateZombieScript.cs" />
      <Compile Include="Assets\Scripts\FirstBossScript.cs" />
      <Compile Include="Assets\Scripts\FourthBossScript.cs" />
